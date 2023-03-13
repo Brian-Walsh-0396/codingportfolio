@@ -22,21 +22,23 @@ classes = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk',
 #races
 races = ['Dwarf', 'Elf', 'Halfling', 'Human', 'Gnome', 'Half-Elf',
          'Half-Orc', 'Tiefling']
-#Stats
-stats = {
-    "barbarian": ["strength", "constitution"],
-    "bard": ["charisma", "dexterity", "constitution"],
-    "cleric": ["wisdom", "constitution", "strength"],
-    "druid": ["wisdom", "constitution"],
-    "fighter": ["strength", "constitution", "dexterity"],
-    "monk": ["dexterity", "wisdom"],
-    "paladin": ["strength", "charisma", "constitution"],
-    "ranger": ["dexterity", "wisdom"],
-    "rogue": ["dexterity", "charisma", "constitution"],
-    "sorcerer": ["charisma", "constitution"],
-    "warlock": ["charisma", "constitution", "dexterity"],
-    "wizard": ["intelligence", "constitution", "dexterity"]
+#Abilities
+
+abilities = {
+    "barbarian": ["Strength", "Constitution"],
+    "bard": ["Charisma", "Dexterity"],
+    "cleric": ["Wisdom", "Constitution"],
+    "druid": ["Wisdom", "Constitution"],
+    "fighter": ["Strength", "Constitution"],
+    "monk": ["Dexterity", "Wisdom"],
+    "paladin": ["Strength", "Charisma"],
+    "ranger": ["Dexterity", "Wisdom"],
+    "rogue": ["Dexterity", "Charisma"],
+    "sorcerer": ["Charisma", "Constitution"],
+    "warlock": ["Charisma", "Constitution"],
+    "wizard": ["Intelligence", "Constitution"]
 }
+
 
 print(f"Please select a D&D class, {player_name}: ")
 
@@ -49,7 +51,7 @@ class_choice = int(input("Enter the number of your chosen class: "))
 
 # Verify that the user has entered a valid number and print their selection
 if class_choice in range(1, len(classes)+1):
-    print(f"You have chosen the {classes[class_choice-1]} class.")
+   print(f"You have chosen the {classes[class_choice-1]} class. The most important abilities are {', '.join(abilities[classes[class_choice-1].lower()])}")
 else:
     print("Invalid input. Please try again and enter the number of your chosen class.")
 # Ask for player race
@@ -72,5 +74,5 @@ else:
     print("Invalid input. Please try again and enter the number of your chosen class.")
 # Ask for character name
 character_name = (input("What is your hero's name? "))
-print(
-    f"Greetings mighty hero, {character_name} the {races[race_choice-1]} {classes[class_choice-1]}! They will be played by {player_name}.")
+
+print(f"Greetings mighty hero, {character_name} the {races[race_choice-1]} {classes[class_choice-1]}! They will be played by {player_name}.")
