@@ -13,11 +13,32 @@ def d20():
 # Ask for player name
 player_name = (input("What is your name? "))
 
-# list classes
+# Arrays
+
+#classes
 classes = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk',
            'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
 
-print(f"Please select a D&D class from the SRD, {player_name}: ")
+#races
+races = ['Dwarf', 'Elf', 'Halfling', 'Human', 'Gnome', 'Half-Elf',
+         'Half-Orc', 'Tiefling']
+#Stats
+stats = {
+    "barbarian": ["strength", "constitution"],
+    "bard": ["charisma", "dexterity", "constitution"],
+    "cleric": ["wisdom", "constitution", "strength"],
+    "druid": ["wisdom", "constitution"],
+    "fighter": ["strength", "constitution", "dexterity"],
+    "monk": ["dexterity", "wisdom"],
+    "paladin": ["strength", "charisma", "constitution"],
+    "ranger": ["dexterity", "wisdom"],
+    "rogue": ["dexterity", "charisma", "constitution"],
+    "sorcerer": ["charisma", "constitution"],
+    "warlock": ["charisma", "constitution", "dexterity"],
+    "wizard": ["intelligence", "constitution", "dexterity"]
+}
+
+print(f"Please select a D&D class, {player_name}: ")
 
 # Display the list of classes with a corresponding number
 for i, c in enumerate(classes, start=1):
@@ -33,9 +54,7 @@ else:
     print("Invalid input. Please try again and enter the number of your chosen class.")
 # Ask for player race
 
-# list races
-races = ['Dwarf', 'Elf', 'Halfling', 'Human', 'Gnome', 'Half-Elf',
-         'Half-Orc', 'Tiefling']
+
 
 print(f"Please select a D&D Race from the SRD, {player_name}: ")
 
@@ -54,4 +73,4 @@ else:
 # Ask for character name
 character_name = (input("What is your hero's name? "))
 print(
-    f"Greetings mighty hero, {character_name}: the {races[race_choice-1]} {classes[class_choice-1]}!")
+    f"Greetings mighty hero, {character_name} the {races[race_choice-1]} {classes[class_choice-1]}! They will be played by {player_name}.")
