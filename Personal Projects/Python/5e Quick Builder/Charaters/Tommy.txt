@@ -1,0 +1,5 @@
+Player:Brian
+Player:Tommy
+Race:Dwarf
+Class:Barbarian
+***stats go here***

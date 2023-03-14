@@ -1,0 +1,6 @@
+Player:Brian
+Player:Yenrin
+Race:Elf
+Class:Wizard
+Rolls: [18, 18, 18, 3, 3, 1]
+Since you are playing a Wizard, you should assign your two highest rolls to Intelligence and Constitution. 

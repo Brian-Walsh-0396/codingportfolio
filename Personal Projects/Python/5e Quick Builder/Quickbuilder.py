@@ -4,12 +4,22 @@ import time
 
 start_time = time.time()
 
-def d20():
-    total = 0
-    for roll in range(int(input("How many dice are you rolling?: "))):
-        total += random.randint(1, 20)
-    return total
+# Defining needed items
 
+# D20
+
+
+def d20():
+    return random.randint(1, 20)
+
+
+# dice rolls
+dice_rolls = []
+
+# ability scores
+ability_scores = {}
+ability1 = {}
+ability2 = {}
 
 # Ask for player name
 player_name = (input("What is your name? "))
@@ -40,7 +50,6 @@ abilities = {
     "wizard": ["Intelligence", "Constitution"]
 }
 
-
 print(f"Please select a D&D class, {player_name}: ")
 
 # Display the list of classes with a corresponding number
@@ -52,8 +61,8 @@ class_choice = int(input("Enter the number of your chosen class: "))
 
 # Verify that the user has entered a valid number and print their selection
 if class_choice in range(1, len(classes)+1):
-   print(
-       f"You have chosen the {classes[class_choice-1]} class. The most important abilities are {', '.join(abilities[classes[class_choice-1].lower()])}")
+    print(
+        f"You have chosen the {classes[class_choice-1]} class.")
 else:
     print("Invalid input. Please try again and enter the number of your chosen class.")
 # Ask for player race
@@ -79,7 +88,25 @@ character_name = (input("What is your hero's name? "))
 print(
     f"Greetings mighty hero, {character_name} the {races[race_choice-1]} {classes[class_choice-1]}! They will be played by {player_name}.")
 
-#exporting the data
+
+# roll stats
+stat_trigger = input("Ready to Roll? Y/N: ")
+if stat_trigger.lower() == 'y':
+    dice_rolls = []
+    for roll in range(6):
+        dice_rolls.append(d20())
+    print("Dice rolls:", dice_rolls)
+else:
+    print("Skipping dice roll...")
+sorted_rolls = sorted(dice_rolls, reverse=True)
+
+# assigning stats
+if str(class_choice) in abilities:
+    ability1, ability2 = abilities[class_choice.lower()]
+    ability_scores = {ability1: sorted_rolls[0], ability2: sorted_rolls[1]}
+    print("Ability scores:", ability_scores)
+
+# exporting the data
 file_path = "C:/Users/Brian/Documents/Software Development Portfolio/Personal Projects/Python/5e Quick Builder"
 file_name = character_name
 file_ext = ".txt"
@@ -88,13 +115,17 @@ file_path = os.path.join(
 
 with open(file_path, "w") as file:
     file.write(f"Player:{player_name}\n")
+    file.write(f"Player:{character_name}\n")
     file.write(f"Race:{races[race_choice-1]}\n")
     file.write(f"Class:{classes[class_choice-1]}\n")
-    file.write(f"***stats go here***")
+    file.write(f"Rolls: {sorted_rolls}\n")
+    class_name = classes[class_choice-1]
+    ability1, ability2 = abilities[class_name.lower()]
+    file.write(f"Since you are playing a {class_name}, you should assign your two highest rolls to {ability1} and {ability2}. ")
 
 os.startfile(file_path)
 
 # next steps
-# add stat rolling
 # print to correct location
 # add formating
+# add checksum to prevent non numerical entries

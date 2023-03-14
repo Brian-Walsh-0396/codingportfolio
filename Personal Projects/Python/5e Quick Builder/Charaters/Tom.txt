@@ -1,0 +1,4 @@
+Player:Brian
+Race:Dwarf
+Class:Barbarian
+***stats go here***
