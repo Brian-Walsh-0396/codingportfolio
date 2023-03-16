@@ -30,9 +30,36 @@ player_name = (input("What is your name? "))
 classes = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk',
            'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
 
+class_desc = [
+    "Barbarian: A fierce warrior who relies on primal instincts and rage in battle.",
+    "Bard: A versatile performer who uses music, storytelling, and magic to inspire and manipulate others.",
+    "Cleric: A divine spellcaster who channels the power of the gods to heal and protect allies and smite enemies.",
+    "Druid: A spellcaster who channels the power of nature to cast spells and transform into animals.",
+    "Fighter: A skilled warrior who relies on strength and skill in combat.",
+    "Monk: A disciplined warrior who combines martial arts and meditation to achieve extraordinary physical and mental feats.",
+    "Paladin: A holy warrior who combines martial prowess with divine magic to serve a righteous cause.",
+    "Ranger: A versatile warrior who specializes in archery and tracking enemies through the wilderness.",
+    "Rogue: A cunning adventurer who excels at deception and trickery.",
+    "Sorcerer: A spellcaster who draws upon innate magical power to cast spells.",
+    "Warlock: A spellcaster who makes a pact with a powerful being for magical power in exchange for service or sacrifice.",
+    "Wizard: A master of the arcane arts who casts spells and specializes in manipulating the fundamental forces of reality."
+]
+
+
 # races
 races = ['Dwarf', 'Elf', 'Halfling', 'Human', 'Gnome', 'Half-Elf',
          'Half-Orc', 'Tiefling']
+
+names = {
+    "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
+    "Elf": ["Ara", "Cadeo", "Enara", "Lirien", "Myrin", "Sariel", "Thia"],
+    "Halfling": ["Alton", "Cade", "Evan", "Kipp", "Oliver", "Perrin", "Toby"],
+    "Human": ["Alex", "Chris", "Jamie", "Jordan", "Riley", "Taylor", "Casey"],
+    "Gnome": ["Bimpnottin", "Glimfeather", "Fibblestib", "Jebeddo", "Namfoodle", "Raulnor", "Zook"],
+    "Half-Elf": ["Adran", "Aelar", "Erevan", "Galinndan", "Rolen", "Thamior", "Varis"],
+    "Half-Orc": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth"],
+    "Tiefling": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon"]
+}
 # Abilities
 
 abilities = {
@@ -49,18 +76,21 @@ abilities = {
     "warlock": ["Charisma", "Constitution"],
     "wizard": ["Intelligence", "Constitution"]
 }
+#Background info
+race_bkg = {
+    "Dwarf": "Short, stout humanoids with a strong sense of tradition and a love of crafting and mining.",
+    "Elf": "Graceful humanoids with a deep connection to nature and a talent for magic.",
+    "Halfling": "Small, nimble humanoids with a love of food, drink, and a good time.",
+    "Human": "Adaptable, ambitious creatures with no innate strengths or weaknesses.",
+    "Gnome": "Curious and inventive humanoids with a talent for tinkering and a love of illusion magic.",
+    "Half-Elf": "Human-elf hybrids with the best traits of both races, but also the feeling of being outsiders to both.",
+    "Half-Orc": "Human-orc hybrids, often raised in harsh conditions, with a love of battle and a thirst for adventure.",
+    "Tiefling": "Descendants of fiends with demonic features, often possessing a natural talent for magic but also facing prejudice and mistrust."
+}
+
 
 # Create a dictionary to store the names for each race
-names = {
-    "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
-    "Elf": ["Ara", "Cadeo", "Enara", "Lirien", "Myrin", "Sariel", "Thia"],
-    "Halfling": ["Alton", "Cade", "Evan", "Kipp", "Oliver", "Perrin", "Toby"],
-    "Human": ["Alex", "Chris", "Jamie", "Jordan", "Riley", "Taylor", "Casey"],
-    "Gnome": ["Bimpnottin", "Glimfeather", "Fibblestib", "Jebeddo", "Namfoodle", "Raulnor", "Zook"],
-    "Half-Elf": ["Adran", "Aelar", "Erevan", "Galinndan", "Rolen", "Thamior", "Varis"],
-    "Half-Orc": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth"],
-    "Tiefling": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon"]
-}
+
 
 class_desc = [
     "Barbarian: A fierce warrior who relies on primal instincts and rage in battle.",
@@ -101,18 +131,34 @@ while True:
 
 
 while True:
-    # Prompt the user to select a D&D race
+    # Prompt the user to select a D&D race or get more info
     print(f"Please select a D&D race, {player_name}: \n")
     for i, c in enumerate(races, start=1):
         print(f"{i}. {c}")
+    print(f"{len(races)+1}. Get more information about a race.")
     race_choice = input("\nEnter the number of your chosen race: \n")
 
-    # Verify that the user has entered a valid number and print their selection
-    if race_choice.isdigit() and int(race_choice) in range(1, len(races)+1):
-        print(f"\nYou have chosen the {races[int(race_choice)-1]} race.")
-        break
+    # Verify that the user has entered a valid number and print their selection or background info
+    if race_choice.isdigit() and int(race_choice) in range(1, len(races)+2):
+        race_choice = int(race_choice)
+        if race_choice == len(races)+1:
+            # Prompt the user to select a race to get more information about
+            print(f"\nPlease select a race to get more information about, {player_name}: \n")
+            for i, c in enumerate(race_bkg, start=1):
+                print(f"{i}. {c}")
+            race_choice = input("\nEnter the number of the chosen race: \n")
+            # Verify that the user has entered a valid number and print the background info
+            if race_choice.isdigit() and int(race_choice) in range(1, len(race_bkg)+1):
+                race_choice = int(race_choice)
+                print(f"\nBackground information about {list(race_bkg.keys())[race_choice-1]}: {race_bkg[list(race_bkg.keys())[race_choice-1]]}\n")
+                break
+            else:
+                print("\nInvalid input. Please try again and enter the number of the chosen race.")
+        else:
+            print(f"\nYou have chosen the {races[race_choice-1]} race.")
+            break
     else:
-        print("\nInvalid input. Please try again and enter the number of your chosen race.")
+        print("\nInvalid input. Please try again and enter the number of your chosen race or 'Get more information about a race'.")
 
 # Prompt the user to select a name or enter their own
 print(f"\nPlease select a name for your {races[int(race_choice)-1]} character, or enter your own name: \n")
