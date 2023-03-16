@@ -1,6 +1,0 @@
-Player:Brian
-Player:Bofur
-Race:Dwarf
-Class:Barbarian
-Rolls: [13, 10, 10, 9, 6, 1]
-Since you are playing a Barbarian, you should assign your two highest rolls to Strength and Constitution. 

@@ -110,55 +110,48 @@ class_desc = [
 
 while True:
     # Prompt the user to select a D&D class or get more info
-    print(f"\nPlease select a D&D class, {player_name}, or enter 'i' to get more information about a class: ")
+    print(f"Please select a D&D class, {player_name}, or enter 'i' to get more information about a class: ")
     for i, c in enumerate(classes, start=1):
         print(f"{i}. {c}")
-    class_choice = input("\nEnter the number of your chosen class, or 'i' for more information: \n")
+    class_choice = input("Enter the number of your chosen class, or 'i' for more information: ")
 
     # If the user entered 'i', prompt them for a class number and print the description
     if class_choice.lower() == 'i':
-        class_num = input("\nEnter the number of the class you'd like more information about: \n")
-        if class_num.isdigit() and int(class_num) in range(1, len(class_desc)+1):
-            print(class_desc[int(class_num)-1])
+        class_num = input("Enter the number of the class you'd like more information about: ")
+        if class_num.isdigit() and int(class_num) in range(1, len(classes_desc)+1):
+            print(classes_desc[int(class_num)-1])
         else:
             print("Invalid input. Please try again and enter the number of the class you'd like more information about.")
     # If the user entered a valid class number, print their selection
     elif class_choice.isdigit() and int(class_choice) in range(1, len(classes)+1):
-        print(f"\nYou have chosen the {classes[int(class_choice)-1]} class.")
+        print(f"You have chosen the {classes[int(class_choice)-1]} class.")
         break
     else:
-        print("Invalid input. Please try again and enter the number of your chosen class or 'i' for more information.\n")
+        print("Invalid input. Please try again and enter the number of your chosen class or 'i' for more information.")
+
 
 
 while True:
-    # Prompt the user to select a D&D race or get more info
-    print(f"Please select a D&D race, {player_name}: \n")
+    # Prompt the user to select a D&D race or get more information
+    print(f"Please select a D&D race, {player_name}, or enter 'i' for more information: \n")
     for i, c in enumerate(races, start=1):
         print(f"{i}. {c}")
-    print(f"{len(races)+1}. Get more information about a race.")
-    race_choice = input("\nEnter the number of your chosen race: \n")
+    race_choice = input("\nEnter the number of your chosen race or 'i' for more information: \n")
 
-    # Verify that the user has entered a valid number and print their selection or background info
-    if race_choice.isdigit() and int(race_choice) in range(1, len(races)+2):
-        race_choice = int(race_choice)
-        if race_choice == len(races)+1:
-            # Prompt the user to select a race to get more information about
-            print(f"\nPlease select a race to get more information about, {player_name}: \n")
-            for i, c in enumerate(race_bkg, start=1):
-                print(f"{i}. {c}")
-            race_choice = input("\nEnter the number of the chosen race: \n")
-            # Verify that the user has entered a valid number and print the background info
-            if race_choice.isdigit() and int(race_choice) in range(1, len(race_bkg)+1):
-                race_choice = int(race_choice)
-                print(f"\nBackground information about {list(race_bkg.keys())[race_choice-1]}: {race_bkg[list(race_bkg.keys())[race_choice-1]]}\n")
-                break
-            else:
-                print("\nInvalid input. Please try again and enter the number of the chosen race.")
+    # If the user entered 'i', prompt them for a race number and print the description
+    if race_choice.lower() == 'i':
+        race_num = input("\nEnter the number of the race you'd like more information about: \n")
+        if race_num.isdigit() and int(race_num) in range(1, len(race_bkg)+1):
+            race_name = list(race_bkg.keys())[int(race_num)-1]
+            print(race_bkg[race_name])
         else:
-            print(f"\nYou have chosen the {races[race_choice-1]} race.")
-            break
+            print("Invalid input. Please try again and enter the number of the race you'd like more information about.")
+    # If the user entered a valid race number, print their selection
+    elif race_choice.isdigit() and int(race_choice) in range(1, len(races)+1):
+        print(f"\nYou have chosen the {races[int(race_choice)-1]} race.")
+        break
     else:
-        print("\nInvalid input. Please try again and enter the number of your chosen race or 'Get more information about a race'.")
+        print("Invalid input. Please try again and enter the number of your chosen race or 'i' for more information.\n")
 
 # Prompt the user to select a name or enter their own
 print(f"\nPlease select a name for your {races[int(race_choice)-1]} character, or enter your own name: \n")
