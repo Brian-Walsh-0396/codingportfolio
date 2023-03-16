@@ -3,7 +3,6 @@ import os
 import time
 
 def roll_dice(sides, rolls, reroll_ones):
-    start_time = time.time()
     roll_results = []
     total = 0
     
@@ -17,6 +16,8 @@ def roll_dice(sides, rolls, reroll_ones):
     
     if sides == 20:
         roll_results.sort(reverse=True)
+    
+
     
     file_path = ""
     file_name = "roll_results"
@@ -38,11 +39,8 @@ def roll_dice(sides, rolls, reroll_ones):
             total_roll = sum(roll_results)
             file.write(f"Total Roll: {total_roll}\n")
         
-        end_time = time.time()
-        runtime_ms = round((end_time - start_time) * 1000, 2)
-        file.write(f"Runtime: {runtime_ms} ms")
-    
-    print(f"Total Roll: {total_roll}")
+
+    os.startfile(file_path)
     return total_roll
 
 sides = int(input("How many sides does the dice have? "))
@@ -51,3 +49,4 @@ reroll_ones = False
 if sides == 20:
     reroll_ones = input("Do you want to reroll 1s on a 20-sided dice? (y/n) ").lower() == "y"
 total_roll = roll_dice(sides, rolls, reroll_ones)
+print(f"Total Roll: {total_roll}")
