@@ -1,0 +1,6 @@
+Player:Brian
+Player:Tim
+Race:Tiefling
+Class:Wizard
+Rolls: [20, 15, 14, 13, 4, 1]
+Since you are playing a Wizard, you should assign your two highest rolls to Intelligence and Constitution. 
