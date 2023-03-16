@@ -62,19 +62,43 @@ names = {
     "Tiefling": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon"]
 }
 
+class_desc = [
+    "Barbarian: A fierce warrior who relies on primal instincts and rage in battle.",
+    "Bard: A versatile performer who uses music, storytelling, and magic to inspire and manipulate others.",
+    "Cleric: A divine spellcaster who channels the power of the gods to heal and protect allies and smite enemies.",
+    "Druid: A spellcaster who channels the power of nature to cast spells and transform into animals.",
+    "Fighter: A skilled warrior who relies on strength and skill in combat.",
+    "Monk: A disciplined warrior who combines martial arts and meditation to achieve extraordinary physical and mental feats.",
+    "Paladin: A holy warrior who combines martial prowess with divine magic to serve a righteous cause.",
+    "Ranger: A versatile warrior who specializes in archery and tracking enemies through the wilderness.",
+    "Rogue: A cunning adventurer who excels at deception and trickery.",
+    "Sorcerer: A spellcaster who draws upon innate magical power to cast spells.",
+    "Warlock: A spellcaster who makes a pact with a powerful being for magical power in exchange for service or sacrifice.",
+    "Wizard: A master of the arcane arts who casts spells and specializes in manipulating the fundamental forces of reality."
+]
+
+
 while True:
-    # Prompt the user to select a D&D class
-    print(f"Please select a D&D class, {player_name}: ")
+    # Prompt the user to select a D&D class or get more info
+    print(f"Please select a D&D class, {player_name}, or enter 'i' to get more information about a class: ")
     for i, c in enumerate(classes, start=1):
         print(f"{i}. {c}")
-    class_choice = input("Enter the number of your chosen class: ")
+    class_choice = input("Enter the number of your chosen class, or 'i' for more information: ")
 
-    # Verify that the user has entered a valid number and print their selection
-    if class_choice.isdigit() and int(class_choice) in range(1, len(classes)+1):
+    # If the user entered 'i', prompt them for a class number and print the description
+    if class_choice.lower() == 'i':
+        class_num = input("Enter the number of the class you'd like more information about: ")
+        if class_num.isdigit() and int(class_num) in range(1, len(class_desc)+1):
+            print(class_desc[int(class_num)-1])
+        else:
+            print("Invalid input. Please try again and enter the number of the class you'd like more information about.")
+    # If the user entered a valid class number, print their selection
+    elif class_choice.isdigit() and int(class_choice) in range(1, len(classes)+1):
         print(f"You have chosen the {classes[int(class_choice)-1]} class.")
         break
     else:
-        print("Invalid input. Please try again and enter the number of your chosen class.")
+        print("Invalid input. Please try again and enter the number of your chosen class or 'i' for more information.")
+
 
 
 while True:
