@@ -1,4 +1,4 @@
-# Simple Dice Rolling Program - V 1.0.1
+# Simple Dice Rolling Program - V 1.1
 
 Welcome to the Simple Dice Rolling Program! This Python program is designed to assist you in rolling dice quickly and easily.
 
