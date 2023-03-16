@@ -3,7 +3,8 @@
 Welcome to the Quick Level 1 Character Creator! This Python project is designed to assist both new players and seasoned DMs in creating a level 1 character quickly and easily.
 
 ## Installation
-To use this tool, you must have Python installed on your computer. If you don't have Python installed, you can download it from Python's website.
+To use this tool, you must have Python installed on your computer. If you don't have Python installed, you can download it from [Python's Website](https://www.python.org/downloads/)
+
 
 Once you have Python installed, you can download the project files from GitHub. You can either clone the repository or download the files as a ZIP archive.
 
@@ -22,6 +23,10 @@ Automatic calculation of your character's ability modifiers, hit points, and oth
 
 ## Contributing
 If you would like to contribute to the Quick Level 1 Character Creator, you can do so by forking the project on GitHub and submitting a pull request with your changes. Please make sure to follow the project's coding standards and include tests for any new functionality you add.
+
+## Tools I used
+* [The 5e SRD](https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf) 
+* [VSCode](https://code.visualstudio.com/download) 
 
 ### Upcoming Features
 
