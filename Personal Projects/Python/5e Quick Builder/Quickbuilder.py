@@ -76,7 +76,7 @@ abilities = {
     "warlock": ["Charisma", "Constitution"],
     "wizard": ["Intelligence", "Constitution"]
 }
-#Background info
+# Background info
 race_bkg = {
     "Dwarf": "Short, stout humanoids with a strong sense of tradition and a love of crafting and mining.",
     "Elf": "Graceful humanoids with a deep connection to nature and a talent for magic.",
@@ -110,14 +110,17 @@ class_desc = [
 
 while True:
     # Prompt the user to select a D&D class or get more info
-    print(f"Please select a D&D class, {player_name}, or enter 'i' to get more information about a class: ")
+    print(
+        f"Please select a D&D class, {player_name}, or enter 'i' to get more information about a class: ")
     for i, c in enumerate(classes, start=1):
         print(f"{i}. {c}")
-    class_choice = input("Enter the number of your chosen class, or 'i' for more information: ")
+    class_choice = input(
+        "Enter the number of your chosen class, or 'i' for more information: ")
 
     # If the user entered 'i', prompt them for a class number and print the description
     if class_choice.lower() == 'i':
-        class_num = input("Enter the number of the class you'd like more information about: ")
+        class_num = input(
+            "Enter the number of the class you'd like more information about: ")
         if class_num.isdigit() and int(class_num) in range(1, len(classes_desc)+1):
             print(classes_desc[int(class_num)-1])
         else:
@@ -130,17 +133,19 @@ while True:
         print("Invalid input. Please try again and enter the number of your chosen class or 'i' for more information.")
 
 
-
 while True:
     # Prompt the user to select a D&D race or get more information
-    print(f"Please select a D&D race, {player_name}, or enter 'i' for more information: \n")
+    print(
+        f"Please select a D&D race, {player_name}, or enter 'i' for more information: \n")
     for i, c in enumerate(races, start=1):
         print(f"{i}. {c}")
-    race_choice = input("\nEnter the number of your chosen race or 'i' for more information: \n")
+    race_choice = input(
+        "\nEnter the number of your chosen race or 'i' for more information: \n")
 
     # If the user entered 'i', prompt them for a race number and print the description
     if race_choice.lower() == 'i':
-        race_num = input("\nEnter the number of the race you'd like more information about: \n")
+        race_num = input(
+            "\nEnter the number of the race you'd like more information about: \n")
         if race_num.isdigit() and int(race_num) in range(1, len(race_bkg)+1):
             race_name = list(race_bkg.keys())[int(race_num)-1]
             print(race_bkg[race_name])
@@ -154,7 +159,8 @@ while True:
         print("Invalid input. Please try again and enter the number of your chosen race or 'i' for more information.\n")
 
 # Prompt the user to select a name or enter their own
-print(f"\nPlease select a name for your {races[int(race_choice)-1]} character, or enter your own name: \n")
+print(
+    f"\nPlease select a name for your {races[int(race_choice)-1]} character, or enter your own name: \n")
 for i, name in enumerate(names[races[int(race_choice)-1]], start=1):
     print(f"{i}. {name}")
 print(f"{len(names[races[int(race_choice)-1]])+1}. Enter your own name")
@@ -168,9 +174,8 @@ else:
     print(f"\nYour character's name is {character_name}")
 
 
-
 print(
-f"Greetings mighty hero, {character_name} the {races[int(race_choice)-1]} {classes[int(class_choice)-1]}! They will be played by {player_name}.")
+    f"Greetings mighty hero, {character_name} the {races[int(race_choice)-1]} {classes[int(class_choice)-1]}! They will be played by {player_name}.")
 
 
 # roll stats
@@ -207,11 +212,11 @@ with open(file_path, "w") as file:
 
     ability1, ability2 = abilities[class_name.lower()]
 
-    file.write(f"Since you are playing a {class_name}, you should assign your two highest rolls to {ability1} and {ability2}. ")
+    file.write(
+        f"Since you are playing a {class_name}, you should assign your two highest rolls to {ability1} and {ability2}. ")
 
 os.startfile(file_path)
 
 # next steps
-# print to correct location
-# add formating
-# add checksum to prevent non numerical entries
+# array of weapons (martial only)
+# stat bonuses based on roll (Score/4 round to nearest whole number, higher)
