@@ -1,3 +1,0 @@
-Dice settings: 20 sides, 7 rolls, Reroll 1s
-Roll Results: 20, 12, 11, 10, 9, 4, 4
-Runtime: 1.01 ms
