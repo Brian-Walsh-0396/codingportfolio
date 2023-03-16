@@ -50,43 +50,64 @@ abilities = {
     "wizard": ["Intelligence", "Constitution"]
 }
 
-print(f"Please select a D&D class, {player_name}: ")
+# Create a dictionary to store the names for each race
+names = {
+    "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
+    "Elf": ["Ara", "Cadeo", "Enara", "Lirien", "Myrin", "Sariel", "Thia"],
+    "Halfling": ["Alton", "Cade", "Evan", "Kipp", "Oliver", "Perrin", "Toby"],
+    "Human": ["Alex", "Chris", "Jamie", "Jordan", "Riley", "Taylor", "Casey"],
+    "Gnome": ["Bimpnottin", "Glimfeather", "Fibblestib", "Jebeddo", "Namfoodle", "Raulnor", "Zook"],
+    "Half-Elf": ["Adran", "Aelar", "Erevan", "Galinndan", "Rolen", "Thamior", "Varis"],
+    "Half-Orc": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth"],
+    "Tiefling": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon"]
+}
 
-# Display the list of classes with a corresponding number
-for i, c in enumerate(classes, start=1):
-    print(f"{i}. {c}")
+while True:
+    # Prompt the user to select a D&D class
+    print(f"Please select a D&D class, {player_name}: ")
+    for i, c in enumerate(classes, start=1):
+        print(f"{i}. {c}")
+    class_choice = input("Enter the number of your chosen class: ")
 
-# Prompt the user to enter a number
-class_choice = int(input("Enter the number of your chosen class: "))
+    # Verify that the user has entered a valid number and print their selection
+    if class_choice.isdigit() and int(class_choice) in range(1, len(classes)+1):
+        print(f"You have chosen the {classes[int(class_choice)-1]} class.")
+        break
+    else:
+        print("Invalid input. Please try again and enter the number of your chosen class.")
 
-# Verify that the user has entered a valid number and print their selection
-if class_choice in range(1, len(classes)+1):
-    print(
-        f"You have chosen the {classes[class_choice-1]} class.")
+
+while True:
+    # Prompt the user to select a D&D race
+    print(f"Please select a D&D race, {player_name}: ")
+    for i, c in enumerate(races, start=1):
+        print(f"{i}. {c}")
+    race_choice = input("Enter the number of your chosen race: ")
+
+    # Verify that the user has entered a valid number and print their selection
+    if race_choice.isdigit() and int(race_choice) in range(1, len(races)+1):
+        print(f"You have chosen the {races[int(race_choice)-1]} race.")
+        break
+    else:
+        print("Invalid input. Please try again and enter the number of your chosen race.")
+
+# Prompt the user to select a name or enter their own
+print(f"Please select a name for your {races[int(race_choice)-1]} character, or enter your own name: ")
+for i, name in enumerate(names[races[int(race_choice)-1]], start=1):
+    print(f"{i}. {name}")
+print(f"{len(names[races[int(race_choice)-1]])+1}. Enter your own name")
+
+name_choice = input("Enter the number of your chosen name: ")
+if name_choice.isdigit() and int(name_choice) in range(1, len(names[races[int(race_choice)-1]])+1):
+    character_name = names[races[int(race_choice)-1]][int(name_choice)-1]
+    print(f"Your character's name is {character_name}")
 else:
-    print("Invalid input. Please try again and enter the number of your chosen class.")
-# Ask for player race
+    character_name = input("Enter your own name: ")
+    print(f"Your character's name is {character_name}") 
 
-
-print(f"Please select a D&D Race from the SRD, {player_name}: ")
-
-# Display the list of classes with a corresponding number
-for i, c in enumerate(races, start=1):
-    print(f"{i}. {c}")
-
-# Prompt the user to enter a number
-race_choice = int(input("Enter the number of your chosen race: "))
-
-# Verify that the user has entered a valid number and print their selection
-if race_choice in range(1, len(races)+1):
-    print(f"You have chosen the {races[race_choice-1]} race.")
-else:
-    print("Invalid input. Please try again and enter the number of your chosen class.")
-# Ask for character name
-character_name = (input("What is your hero's name? "))
 
 print(
-    f"Greetings mighty hero, {character_name} the {races[race_choice-1]} {classes[class_choice-1]}! They will be played by {player_name}.")
+f"Greetings mighty hero, {character_name} the {races[int(race_choice)-1]} {classes[int(class_choice)-1]}! They will be played by {player_name}.")
 
 
 # roll stats
@@ -116,11 +137,13 @@ file_path = os.path.join(
 with open(file_path, "w") as file:
     file.write(f"Player:{player_name}\n")
     file.write(f"Player:{character_name}\n")
-    file.write(f"Race:{races[race_choice-1]}\n")
-    file.write(f"Class:{classes[class_choice-1]}\n")
+    file.write(f"Race:{races[int(race_choice)-1]}\n")
+    file.write(f"Class:{classes[int(class_choice)-1]}\n")
     file.write(f"Rolls: {sorted_rolls}\n")
-    class_name = classes[class_choice-1]
+    class_name = classes[int(class_choice)-1]
+
     ability1, ability2 = abilities[class_name.lower()]
+
     file.write(f"Since you are playing a {class_name}, you should assign your two highest rolls to {ability1} and {ability2}. ")
 
 os.startfile(file_path)
