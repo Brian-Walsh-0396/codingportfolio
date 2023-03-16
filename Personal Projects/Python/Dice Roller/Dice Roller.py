@@ -32,17 +32,22 @@ def roll_dice(sides, rolls, reroll_ones):
         file.write(f"Dice settings: {sides} sides, {rolls} rolls, {'Reroll 1s' if reroll_ones else 'Do not reroll 1s'}\n")
         file.write(f"Roll Results: {', '.join(str(x) for x in roll_results)}\n")
         if sides < 20:
-            file.write(f"Total: {total}\n")
+            total_roll = sum(roll_results)
+            file.write(f"Total Roll: {total_roll}\n")
+        else:
+            total_roll = sum(roll_results)
+            file.write(f"Total Roll: {total_roll}\n")
         
         end_time = time.time()
         runtime_ms = round((end_time - start_time) * 1000, 2)
         file.write(f"Runtime: {runtime_ms} ms")
-
-    os.startfile(file_path)
+    
+    print(f"Total Roll: {total_roll}")
+    return total_roll
 
 sides = int(input("How many sides does the dice have? "))
 rolls = int(input("How many times do you want to roll the dice? "))
 reroll_ones = False
 if sides == 20:
     reroll_ones = input("Do you want to reroll 1s on a 20-sided dice? (y/n) ").lower() == "y"
-roll_dice(sides, rolls, reroll_ones)
+total_roll = roll_dice(sides, rolls, reroll_ones)
