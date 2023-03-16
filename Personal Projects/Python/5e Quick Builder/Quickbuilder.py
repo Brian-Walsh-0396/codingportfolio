@@ -160,7 +160,7 @@ file_path = os.path.join(
 
 with open(file_path, "w") as file:
     file.write(f"Player:{player_name}\n")
-    file.write(f"Player:{character_name}\n")
+    file.write(f"Character:{character_name}\n")
     file.write(f"Race:{races[int(race_choice)-1]}\n")
     file.write(f"Class:{classes[int(class_choice)-1]}\n")
     file.write(f"Rolls: {sorted_rolls}\n")
