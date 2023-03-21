@@ -47,7 +47,7 @@ class_desc = [
 
 
 # races
-races = ['Dwarf', 'Elf', 'Halfling', 'Human', 'Gnome', 'Half-Elf',
+races = ['Dwarf', 'Dragonborn','Elf', 'Halfling', 'Human', 'Gnome', 'Half-Elf',
          'Half-Orc', 'Tiefling']
 
 names = {
@@ -78,6 +78,7 @@ abilities = {
 }
 # Background info
 race_bkg = {
+    "Dragonborn: Lizard Man"
     "Dwarf": "Short, stout humanoids with a strong sense of tradition and a love of crafting and mining.",
     "Elf": "Graceful humanoids with a deep connection to nature and a talent for magic.",
     "Halfling": "Small, nimble humanoids with a love of food, drink, and a good time.",

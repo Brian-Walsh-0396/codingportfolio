@@ -1,4 +1,4 @@
-# Quick Level 1 Character Creator - V 1.0.2
+# Quick Level 1 Character Creator - V 1.0.5
 
 Welcome to the Quick Level 1 Character Creator! This Python project is designed to assist both new players and seasoned DMs in creating a level 1 character quickly and easily.
 
