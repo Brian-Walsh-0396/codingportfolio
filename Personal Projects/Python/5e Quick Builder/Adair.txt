@@ -1,0 +1,6 @@
+Player:Brian
+Character:Adair
+Race:Dragonborn
+Class:Wizard
+Rolls: [20, 17, 14, 13, 9, 9]
+Since you are playing a Wizard, you should assign your two highest rolls to Intelligence and Constitution. 
