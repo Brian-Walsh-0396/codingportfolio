@@ -5,15 +5,15 @@ Attention all adventurers! Exciting news: new weapons are coming soon to our ars
 
 ***
 
-## V1.0.5
+## V1.0.5 - March 21, 2023
 
-### The Dragoborn Update March 21, 2023
+### The Dragoborn Update 
 
 Adventurers, rejoice! The mighty Dragonborn race has arrived, ready to fight against the forces of darkness. With scales of every color, from deep black to shining gold, these majestic beings possess breath weapons that are unmatched in power. Their devotion to their clans is unbreakable, and they hold excellence in every endeavor with high regard. Join us on an exciting journey with our newest comrades, the Dragonborns! With their fearsome strength and unparalleled abilities, we shall vanquish all foes in our quest most thrilling.
 
-## V1.0.4 March 15, 2023
+## V1.0.4 - March 15, 2023
 
-### What's in a name?
+### What's in a Name?
 
 We've added an exciting new feature to our game! Players can now select from a pre-written list of names or enter their own custom name for their characters. With this new addition, players can create unique and personalized characters that truly embody their playstyle. Join us on our quest for adventure with our latest update!
 
