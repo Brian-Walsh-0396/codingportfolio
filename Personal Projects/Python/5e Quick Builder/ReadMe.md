@@ -2,12 +2,6 @@
 
 Welcome to the Quick Level 1 Character Creator! This Python project is designed to assist both new players and seasoned DMs in creating a level 1 character quickly and easily.
 
-## The Dragoborn Update
-
-Adventurers, rejoice! The mighty Dragonborn race has arrived, ready to fight against the forces of darkness. With scales of every color, from deep black to shining gold, these majestic beings possess breath weapons that are unmatched in power. Their devotion to their clans is unbreakable, and they hold excellence in every endeavor with high regard. Join us on an exciting journey with our newest comrades, the Dragonborns! With their fearsome strength and unparalleled abilities, we shall vanquish all foes in our quest most thrilling.
-***
-
-
 
 ## Installation
 To use this tool, you must have Python installed on your computer. If you don't have Python installed, you can download it from [Python's Website](https://www.python.org/downloads/)

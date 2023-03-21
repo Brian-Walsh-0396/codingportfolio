@@ -1,0 +1,31 @@
+melee_weapons = [
+    {'name': 'Battleaxe', 'damage': '1d8', 'properties': 'Versatile (1d10)'},
+    {'name': 'Flail', 'damage': '1d8', 'properties': ''},
+    {'name': 'Glaive', 'damage': '1d10', 'properties': ''},
+    {'name': 'Greataxe', 'damage': '1d12', 'properties': ''},
+    {'name': 'Greatsword', 'damage': '2d6', 'properties': ''},
+    {'name': 'Halberd', 'damage': '1d10', 'properties': ''},
+    {'name': 'Lance', 'damage': '1d12', 'properties': 'Reach (5 ft)'},
+    {'name': 'Longsword', 'damage': '1d8', 'properties': 'Versatile (1d10)'},
+    {'name': 'Maul', 'damage': '2d6', 'properties': ''},
+    {'name': 'Morningstar', 'damage': '1d8', 'properties': ''},
+    {'name': 'Pike', 'damage': '1d10', 'properties': ''},
+    {'name': 'Rapier', 'damage': '1d8', 'properties': 'Finesse'},
+    {'name': 'Scimitar', 'damage': '1d6', 'properties': 'Finesse'},
+    {'name': 'Shortsword', 'damage': '1d6', 'properties': 'Finesse'},
+    {'name': 'Trident', 'damage': '1d6', 'properties': 'Thrown (range 20/60 ft), Versatile (1d8)'},
+    {'name': 'War Pick', 'damage': '1d8', 'properties': ''},
+    {'name': 'Warhammer', 'damage': '1d8', 'properties': 'Versatile (1d10)'},
+    {'name': 'Whip', 'damage': '1d4', 'properties': 'Finesse'}
+]
+
+ranged_weapons = [
+    {'name': 'Blowgun', 'damage': '1', 'range': '25/100 ft'},
+    {'name': 'Crossbow, Hand', 'damage': '1d6', 'range': '30/120 ft'},
+    {'name': 'Crossbow, Heavy', 'damage': '1d10', 'range': '100/400 ft'},
+    {'name': 'Crossbow, Light', 'damage': '1d8', 'range': '80/320 ft'},
+    {'name': 'Longbow', 'damage': '1d8', 'range': '150/600 ft'},
+    {'name': 'Net', 'damage': '—', 'range': '5/15 ft'},
+    {'name': 'Shortbow', 'damage': '1d6', 'range': '80/320 ft'},
+    {'name': 'Sling', 'damage': '1d4', 'range': '30/120 ft'}
+]
