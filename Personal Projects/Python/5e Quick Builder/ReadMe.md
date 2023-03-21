@@ -1,4 +1,10 @@
 # Quick Level 1 Character Creator - V 1.0.5
+***
+
+## The Dragoborn update
+
+Adventurers, rejoice! The mighty Dragonborn race has arrived, ready to fight against the forces of darkness. With scales of every color, from deep black to shining gold, these majestic beings possess breath weapons that are unmatched in power. Their devotion to their clans is unbreakable, and they hold excellence in every endeavor with high regard. Join us on an exciting journey with our newest comrades, the Dragonborns! With their fearsome strength and unparalleled abilities, we shall vanquish all foes in our quest most thrilling.
+***
 
 Welcome to the Quick Level 1 Character Creator! This Python project is designed to assist both new players and seasoned DMs in creating a level 1 character quickly and easily.
 
@@ -33,5 +39,4 @@ If you would like to contribute to the Quick Level 1 Character Creator, you can 
 * Basic Weapons
 * Armor
 * Have file save to desktop with new formatting (playername_character name)
-* Dragonborn Race
 * More Name Options

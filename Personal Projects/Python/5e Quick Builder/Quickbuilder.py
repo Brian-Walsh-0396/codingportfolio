@@ -47,17 +47,18 @@ class_desc = [
 
 
 # races
-races = ['Dwarf', 'Dragonborn','Elf', 'Halfling', 'Human', 'Gnome', 'Half-Elf',
-         'Half-Orc', 'Tiefling']
+races = ['Dragonborn', 'Dwarf', 'Elf', 'Gnome', 'Halfling', 'Half-Elf', 'Half-Orc', 'Human', 'Tiefling']
+
 
 names = {
-    "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
+ "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
+    "Dragonborn": ["Adair", "Bryn", "Caelan", "Darian", "Eiran", "Kael", "Tarin"],
     "Elf": ["Ara", "Cadeo", "Enara", "Lirien", "Myrin", "Sariel", "Thia"],
-    "Halfling": ["Alton", "Cade", "Evan", "Kipp", "Oliver", "Perrin", "Toby"],
-    "Human": ["Alex", "Chris", "Jamie", "Jordan", "Riley", "Taylor", "Casey"],
     "Gnome": ["Bimpnottin", "Glimfeather", "Fibblestib", "Jebeddo", "Namfoodle", "Raulnor", "Zook"],
+    "Halfling": ["Alton", "Cade", "Evan", "Kipp", "Oliver", "Perrin", "Toby"],
     "Half-Elf": ["Adran", "Aelar", "Erevan", "Galinndan", "Rolen", "Thamior", "Varis"],
     "Half-Orc": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth"],
+    "Human": ["Alex", "Chris", "Jamie", "Jordan", "Riley", "Taylor", "Casey"],
     "Tiefling": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon"]
 }
 # Abilities
@@ -78,7 +79,7 @@ abilities = {
 }
 # Background info
 race_bkg = {
-    "Dragonborn: Lizard Man"
+    "Dragonborn": "Proud humanoid dragons with a strong sense of honor and a natural affinity for their breath weapon. They often pursue a path of combat but also excel in leadership and artistry.",
     "Dwarf": "Short, stout humanoids with a strong sense of tradition and a love of crafting and mining.",
     "Elf": "Graceful humanoids with a deep connection to nature and a talent for magic.",
     "Halfling": "Small, nimble humanoids with a love of food, drink, and a good time.",
