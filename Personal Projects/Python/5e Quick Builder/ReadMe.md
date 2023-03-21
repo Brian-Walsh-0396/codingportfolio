@@ -33,3 +33,5 @@ If you would like to contribute to the Quick Level 1 Character Creator, you can 
 * Basic Weapons
 * Armor
 * Have file save to desktop with new formatting (playername_character name)
+* Dragonborn Race
+* More Name Options
