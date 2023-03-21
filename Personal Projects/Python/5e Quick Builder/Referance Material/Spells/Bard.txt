@@ -1,0 +1,21 @@
+bard_spells = [
+    # Level 0 Spells
+    {'name': 'Dancing Lights', 'description': 'Creates torches or other lights.', 'save': False, 'dice': None},
+    {'name': 'Mage Hand', 'description': 'Moves an object with telekinesis.', 'save': False, 'dice': None},
+    {'name': 'Mending', 'description': 'Repairs a single break or tear in an object.', 'save': False, 'dice': None},
+    {'name': 'Message', 'description': 'Allows two-way communication with a target.', 'save': False, 'dice': None},
+    {'name': 'Prestidigitation', 'description': 'Performs minor magical tricks.', 'save': False, 'dice': None},
+    {'name': 'True Strike', 'description': 'Grants insight into the target’s defenses.', 'save': False, 'dice': None},
+    {'name': 'Vicious Mockery', 'description': 'Insults and demeans a target, dealing psychic damage.', 'save': True, 'dice': '1d4'},
+    {'name': 'Friends', 'description': 'Improves a target’s attitude towards the caster.', 'save': True, 'dice': None},
+    
+    # Level 1 Spells
+    {'name': 'Cure Wounds', 'description': 'Heals a target for a set amount of hit points.', 'save': False, 'dice': '1d8'},
+    {'name': 'Dissonant Whispers', 'description': 'Forces a target to move away and take psychic damage.', 'save': True, 'dice': '3d6'},
+    {'name': 'Faerie Fire', 'description': 'Outlines targets and gives advantage on attacks against them.', 'save': True, 'dice': None},
+    {'name': 'Feather Fall', 'description': 'Slows a fall and protects against falling damage.', 'save': False, 'dice': None},
+    {'name': 'Healing Word', 'description': 'Heals a target for a small amount of hit points.', 'save': False, 'dice': '1d4'},
+    {'name': 'Thunderwave', 'description': 'Deals thunder damage to targets and pushes them away.', 'save': True, 'dice': '2d8'},
+    {'name': 'Charm Person', 'description': 'Makes a target friendly and more susceptible to the caster’s requests.', 'save': True, 'dice': None},
+    {'name': 'Sleep', 'description': 'Puts targets to sleep, starting with the lowest hit points.', 'save': True, 'dice': '5d8'},
+]

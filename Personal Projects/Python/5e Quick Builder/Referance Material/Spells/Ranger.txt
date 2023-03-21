@@ -1,0 +1,21 @@
+ranger_spells = [
+    # Level 0 Spells
+    {'name': 'Alarm', 'description': 'Creates a mental alarm that alerts you when a creature of Tiny or larger size enters the warded area.', 'save': False, 'dice': None},
+    {'name': 'Animal Friendship', 'description': 'Lets you convince a beast that you mean it no harm. The beast must make a Wisdom save.', 'save': True, 'dice': None},
+    {'name': 'Detect Poison and Disease', 'description': 'Detects and identifies poisons, diseases, and their effects within range.', 'save': False, 'dice': None},
+    {'name': 'Ensnaring Strike', 'description': 'Gives your weapon extra damage and ensnares the target on a hit. Target makes a Strength save or is restrained.', 'save': True, 'dice': '1d6'},
+    {'name': 'Fog Cloud', 'description': 'Creates a 20-foot-radius sphere of fog centered on a point within range.', 'save': False, 'dice': None},
+    {'name': 'Goodberry', 'description': 'Creates a handful of magical berries that provide nourishment and can heal hit points.', 'save': False, 'dice': None},
+    {'name': 'Hunter\'s Mark', 'description': 'Marks a target as your quarry. You deal extra damage to the target and have advantage on Wisdom (Perception) and Wisdom (Survival) checks to find it.', 'save': False, 'dice': None},
+    {'name': 'Jump', 'description': 'Lets you jump farther and higher than normal for the duration of the spell.', 'save': False, 'dice': None},
+    
+    # Level 1 Spells
+    {'name': 'Cure Wounds', 'description': 'Heals a target for a set amount of hit points.', 'save': False, 'dice': '1d8'},
+    {'name': 'Detect Evil and Good', 'description': 'Detects the presence of aberrations, celestials, elementals, fey, fiends, or undead within range.', 'save': False, 'dice': None},
+    {'name': 'Entangle', 'description': 'Causes plants to grow and entangle creatures in the area. Creatures in the area must make a Strength save or be restrained.', 'save': True, 'dice': None},
+    {'name': 'Fog Cloud', 'description': 'Creates a 20-foot-radius sphere of fog centered on a point within range.', 'save': False, 'dice': None},
+    {'name': 'Goodberry', 'description': 'Creates a handful of magical berries that provide nourishment and can heal hit points.', 'save': False, 'dice': None},
+    {'name': 'Hail of Thorns', 'description': 'Gives your weapon extra damage and creates a burst of thorns on a hit. Targets within 5 feet of the original target must make a Dexterity save or take damage.', 'save': True, 'dice': '1d10'},
+    {'name': 'Hunter\'s Mark', 'description': 'Marks a target as your quarry. You deal extra damage to the target and have advantage on Wisdom (Perception) and Wisdom (Survival) checks to find it.', 'save': False, 'dice': None},
+    {'name': 'Speak with Animals', 'description': 'Lets you communicate with animals within range.', 'save': False, 'dice': None},
+]

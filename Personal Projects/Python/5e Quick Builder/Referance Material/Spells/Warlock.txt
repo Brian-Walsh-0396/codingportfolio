@@ -1,0 +1,13 @@
+warlock_spells = [
+    # Cantrip Spells
+    {'name': 'Eldritch Blast', 'description': 'Fires a beam of crackling energy that deals force damage to a target within range.', 'save': False, 'dice': '1d10'},
+    {'name': 'Chill Touch', 'description': 'Creates a ghostly hand that reaches out to touch a target, dealing necrotic damage and preventing it from regaining hit points.', 'save': False, 'dice': '1d8'},
+    {'name': 'Minor Illusion', 'description': 'Creates a simple illusion within range that can fit within a 5-foot cube.', 'save': False, 'dice': None},
+    {'name': 'Prestidigitation', 'description': 'Allows you to perform minor magical tricks such as creating small objects, altering the appearance of objects, or creating sensory effects.', 'save': False, 'dice': None},
+    
+    # Level 1 Spells
+    {'name': 'Armor of Agathys', 'description': 'Creates a protective layer of ice around the caster, dealing cold damage to attackers.', 'save': False, 'dice': '5'},
+    {'name': 'Comprehend Languages', 'description': 'Allows you to understand and communicate in any spoken or written language for the duration of the spell.', 'save': False, 'dice': None},
+    {'name': 'Hellish Rebuke', 'description': 'Inflicts fire damage on a target that has damaged you in the current turn. The target must make a Dexterity save or take damage.', 'save': True, 'dice': '2d10'},
+    {'name': 'Hex', 'description': 'Curses a target within range, causing it to take extra damage from your attacks. You choose an ability score to reduce by 1 for the target, giving you an advantage on attack rolls against the target based on that ability score.', 'save': False, 'dice': None},
+]

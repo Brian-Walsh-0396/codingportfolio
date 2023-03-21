@@ -1,0 +1,21 @@
+cleric_spells = [
+    # Level 0 Spells
+    {'name': 'Guidance', 'description': 'Gives a target a bonus on ability checks.', 'save': False, 'dice': None},
+    {'name': 'Light', 'description': 'Creates light on an object.', 'save': False, 'dice': None},
+    {'name': 'Mending', 'description': 'Repairs a single break or tear in an object.', 'save': False, 'dice': None},
+    {'name': 'Resistance', 'description': 'Gives a target resistance to a type of damage.', 'save': False, 'dice': None},
+    {'name': 'Sacred Flame', 'description': 'Burns a target with divine fire.', 'save': True, 'dice': '1d8'},
+    {'name': 'Spare the Dying', 'description': 'Stabilizes a dying creature.', 'save': False, 'dice': None},
+    {'name': 'Thaumaturgy', 'description': 'Performs minor miracles such as causing harmless tremors.', 'save': False, 'dice': None},
+    {'name': 'Word of Radiance', 'description': 'Creates a burst of radiant energy around the caster, damaging nearby enemies.', 'save': True, 'dice': '1d6'},
+    
+    # Level 1 Spells
+    {'name': 'Bless', 'description': 'Gives targets a bonus on attack rolls and saving throws.', 'save': False, 'dice': None},
+    {'name': 'Command', 'description': 'Forces a target to follow a single word command.', 'save': True, 'dice': None},
+    {'name': 'Cure Wounds', 'description': 'Heals a target for a set amount of hit points.', 'save': False, 'dice': '1d8'},
+    {'name': 'Detect Evil and Good', 'description': 'Detects presence of certain creature types.', 'save': False, 'dice': None},
+    {'name': 'Guiding Bolt', 'description': 'Fires a bolt of divine energy that damages a target and gives the next attack against it advantage.', 'save': True, 'dice': '4d6'},
+    {'name': 'Healing Word', 'description': 'Heals a target for a small amount of hit points.', 'save': False, 'dice': '1d4'},
+    {'name': 'Inflict Wounds', 'description': 'Inflicts necrotic damage on a target.', 'save': True, 'dice': '3d10'},
+    {'name': 'Shield of Faith', 'description': 'Gives a target a bonus to AC.', 'save': False, 'dice': None},
+]

@@ -1,0 +1,21 @@
+druid_spells = [
+    # Level 0 Spells
+    {'name': 'Druidcraft', 'description': 'Produces a minor magical effect related to nature.', 'save': False, 'dice': None},
+    {'name': 'Guidance', 'description': 'Gives a target a bonus on ability checks.', 'save': False, 'dice': None},
+    {'name': 'Mending', 'description': 'Repairs a single break or tear in an object.', 'save': False, 'dice': None},
+    {'name': 'Poison Spray', 'description': 'Sprays poison at a target within range.', 'save': True, 'dice': '1d12'},
+    {'name': 'Produce Flame', 'description': 'Creates a small flame that can be used as a light or thrown as an attack.', 'save': True, 'dice': '1d8'},
+    {'name': 'Resistance', 'description': 'Gives a target resistance to a type of damage.', 'save': False, 'dice': None},
+    {'name': 'Shillelagh', 'description': 'Magically enhances a club or staff.', 'save': False, 'dice': None},
+    {'name': 'Thorn Whip', 'description': 'Creates a whip of thorns to attack a target within range.', 'save': True, 'dice': '1d6'},
+    
+    # Level 1 Spells
+    {'name': 'Cure Wounds', 'description': 'Heals a target for a set amount of hit points.', 'save': False, 'dice': '1d8'},
+    {'name': 'Entangle', 'description': 'Creates a difficult terrain that restrains creatures within it.', 'save': True, 'dice': None},
+    {'name': 'Faerie Fire', 'description': 'Outlines targets with magical light, giving them disadvantage on stealth checks and giving allies advantage on attack rolls against them.', 'save': True, 'dice': None},
+    {'name': 'Goodberry', 'description': 'Creates 10 magical berries that can each restore 1 hit point when eaten.', 'save': False, 'dice': None},
+    {'name': 'Healing Word', 'description': 'Heals a target for a small amount of hit points.', 'save': False, 'dice': '1d4'},
+    {'name': 'Thunderwave', 'description': 'Creates a wave of thunderous force that damages and pushes creatures away.', 'save': True, 'dice': '2d8'},
+    {'name': 'Animal Friendship', 'description': 'Attempts to befriend an animal. If the animal's Intelligence is 4 or higher, it must make a Wisdom save.', 'save': True, 'dice': None},
+    {'name': 'Charm Person', 'description': 'Attempts to charm a humanoid. The target must make a Wisdom save.', 'save': True, 'dice': None},
+]

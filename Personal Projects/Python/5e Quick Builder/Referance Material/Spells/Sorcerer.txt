@@ -1,0 +1,19 @@
+sorcerer_spells = [
+    # Cantrip Spells
+    {'name': 'Acid Splash', 'description': 'Sprays acid on two targets within range, dealing acid damage to each.', 'save': True, 'dice': '1d6'},
+    {'name': 'Chill Touch', 'description': 'Creates a ghostly hand that reaches out to touch a target, dealing necrotic damage and preventing it from regaining hit points.', 'save': False, 'dice': '1d8'},
+    {'name': 'Dancing Lights', 'description': 'Creates up to four lights within range that can be moved and used to illuminate areas or distract creatures.', 'save': False, 'dice': None},
+    {'name': 'Fire Bolt', 'description': 'Fires a bolt of fire that deals fire damage to a target within range.', 'save': True, 'dice': '1d10'},
+    {'name': 'Light', 'description': 'Causes an object within range to emit bright light for a specific duration, allowing you to see in the darkness.', 'save': False, 'dice': None},
+    {'name': 'Mage Hand', 'description': 'Creates a spectral hand that can move and manipulate objects within range.', 'save': False, 'dice': None},
+    {'name': 'Mending', 'description': 'Repairs a single object within range that is no larger than one cubic foot.', 'save': False, 'dice': None},
+    {'name': 'Ray of Frost', 'description': 'Fires a beam of cold energy that deals cold damage and reduces the target\'s speed.', 'save': True, 'dice': '1d8'},
+    
+    # Level 1 Spells
+    {'name': 'Burning Hands', 'description': 'Creates a cone of fire that deals fire damage to all creatures within range.', 'save': True, 'dice': '3d6'},
+    {'name': 'Charm Person', 'description': 'Attempts to charm a humanoid within range, making it friendly towards you and willing to do what you ask.', 'save': True, 'dice': None},
+    {'name': 'False Life', 'description': 'Gives the caster temporary hit points for the duration of the spell.', 'save': False, 'dice': '1d4+4'},
+    {'name': 'Magic Missile', 'description': 'Fires a dart of magical force that deals force damage to a target within range.', 'save': False, 'dice': '1d4+1'},
+    {'name': 'Shield', 'description': 'Creates a magical shield that grants the caster a bonus to AC and immunity to magic missile for the duration of the spell.', 'save': False, 'dice': None},
+    {'name': 'Thunderwave', 'description': 'Creates a wave of thunderous force that deals thunder damage to all creatures within range and pushes them away from the caster.', 'save': True, 'dice': '2d8'},
+    {'name': 'Witch Bolt', 'description': 'Creates a bolt of crackling energy that deals lightning damage to a target within range and continues to deal damage to the target on subsequent turns for the duration of the spell.',}

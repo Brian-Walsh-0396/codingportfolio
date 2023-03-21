@@ -1,0 +1,21 @@
+paladin_spells = [
+    # Level 0 Spells
+    {'name': 'Bless', 'description': 'Blesses up to three creatures, giving them a bonus on attack rolls and saving throws.', 'save': False, 'dice': None},
+    {'name': 'Detect Evil and Good', 'description': 'Detects the presence of aberrations, celestials, elementals, fey, fiends, or undead within range.', 'save': False, 'dice': None},
+    {'name': 'Detect Magic', 'description': 'Detects the presence of magic within range.', 'save': False, 'dice': None},
+    {'name': 'Detect Poison and Disease', 'description': 'Detects and identifies poisons, diseases, and their effects within range.', 'save': False, 'dice': None},
+    {'name': 'Protection from Evil and Good', 'description': 'Gives a target protection from aberrations, celestials, elementals, fey, fiends, and undead.', 'save': False, 'dice': None},
+    {'name': 'Purify Food and Drink', 'description': 'Purifies a single unit of food or drink within range.', 'save': False, 'dice': None},
+    {'name': 'Resistance', 'description': 'Gives a target resistance to a type of damage.', 'save': False, 'dice': None},
+    {'name': 'Shield of Faith', 'description': 'Gives a target a bonus to AC for the duration of the spell.', 'save': False, 'dice': None},
+    
+    # Level 1 Spells
+    {'name': 'Bane', 'description': 'Debuffs up to three creatures, giving them a penalty on attack rolls and saving throws.', 'save': True, 'dice': None},
+    {'name': 'Command', 'description': 'Gives a command to a creature within range. The creature must make a Wisdom save.', 'save': True, 'dice': None},
+    {'name': 'Compelled Duel', 'description': 'Compels a creature within range to fight you. The creature must make a Wisdom save.', 'save': True, 'dice': None},
+    {'name': 'Cure Wounds', 'description': 'Heals a target for a set amount of hit points.', 'save': False, 'dice': '1d8'},
+    {'name': 'Detect Evil and Good', 'description': 'Detects the presence of aberrations, celestials, elementals, fey, fiends, or undead within range.', 'save': False, 'dice': None},
+    {'name': 'Protection from Evil and Good', 'description': 'Gives a target protection from aberrations, celestials, elementals, fey, fiends, and undead.', 'save': False, 'dice': None},
+    {'name': 'Searing Smite', 'description': 'Gives your weapon extra fire damage and sets the target on fire on a hit. Target makes a Constitution save or takes additional fire damage.', 'save': True, 'dice': '1d6'},
+    {'name': 'Thunderous Smite', 'description': 'Gives your weapon extra thunder damage and knocks the target prone on a hit. Target makes a Strength save or is knocked prone.', 'save': True, 'dice': '2d6'},
+]
