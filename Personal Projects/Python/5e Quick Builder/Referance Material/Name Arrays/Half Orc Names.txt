@@ -1,0 +1,1 @@
+names = ["Ash", "Blade", "Brick", "Chase", "Dusk", "Ember", "Frost", "Gale", "Harbor", "Hawk", "Hunter", "Jade", "Jet", "Justice", "Onyx", "Phoenix", "Rebel", "Rune", "Shade", "Sky", "Slate", "Storm", "Vale", "Valor", "Zephyr"]

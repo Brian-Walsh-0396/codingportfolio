@@ -1,0 +1,1 @@
+names = ["Alfie", "Bennie", "Dusty", "Finn", "Gus", "Izzy", "Joey", "Kip", "Lucky", "Mickey", "Nicky", "Ollie", "Pip", "Rudy", "Sammy", "Scout", "Sunny", "Terry", "Teddy", "Toby", "Tommy", "Wally", "Winnie", "Ziggy", "Zippy"]
