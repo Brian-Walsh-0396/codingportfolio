@@ -35,4 +35,5 @@ If you would like to contribute to the Quick Level 1 Character Creator, you can 
 * Armor
 * Have file save to desktop with new formatting (playername_character name)
 * More Name Options
+* Help with ability assignment
 * Spells
