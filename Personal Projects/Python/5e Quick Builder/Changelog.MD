@@ -5,13 +5,15 @@ Attention all adventurers! Exciting news: new weapons are coming soon to our ars
 
 ***
 
+## V1.0.5.1 - March 23, 2023
+### Bug fixed
+*** Fixed bug with class information not displaying properly
+*** Cleaned code
 ## V1.0.5 - March 21, 2023
 
 ### The Dragoborn Update 
 
 Adventurers, rejoice! The mighty Dragonborn race has arrived, ready to fight against the forces of darkness. With scales of every color, from deep black to shining gold, these majestic beings possess breath weapons that are unmatched in power. Their devotion to their clans is unbreakable, and they hold excellence in every endeavor with high regard. Join us on an exciting journey with our newest comrades, the Dragonborns! With their fearsome strength and unparalleled abilities, we shall vanquish all foes in our quest most thrilling.
-
-Further tes
 
 ## V1.0.4 - March 15, 2023
 
