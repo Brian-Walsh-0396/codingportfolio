@@ -4,11 +4,13 @@
 Attention all adventurers! Exciting news: new weapons are coming soon to our arsenal. From powerful two-handed swords to quick and nimble daggers, we've got it all. Get ready to enhance your combat skills and take on even greater challenges. Stay tuned for the official announcement and get ready to gear up!
 
 ***
+## V1.0.5.5 - March 23, 2023
+### Added more names for all races
 
 ## V1.0.5.1 - March 23, 2023
 ### Bug fixed
-*** Fixed bug with class information not displaying properly
-*** Cleaned code
+* Fixed bug with class information not displaying properly
+* Cleaned code
 ## V1.0.5 - March 21, 2023
 
 ### The Dragoborn Update 

@@ -47,19 +47,28 @@ class_desc = [
 
 
 # races
-races = ['Dragonborn', 'Dwarf', 'Elf', 'Gnome', 'Halfling', 'Half-Elf', 'Half-Orc', 'Human', 'Tiefling']
+races = ['Dragonborn', 'Dwarf', 'Elf', 'Gnome', 'Halfling',
+         'Half-Elf', 'Half-Orc', 'Human', 'Tiefling']
 
 
 names = {
-    "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
-    "Dragonborn":["Adair","Alden","Arin","Bryn","Caelan","Cassian","Darian","Eiran","Eldrid","Emyr","Finley","Galen","Hale","Jory","Kael","Kamryn","Linden","Merric","Nuriel","Paxton","Quinlan","Riven","Sarai","Tarin","Zarek"],
-    "Elf": ["Ara", "Cadeo", "Enara", "Lirien", "Myrin", "Sariel", "Thia"],
-    "Gnome": ["Bimpnottin", "Glimfeather", "Fibblestib", "Jebeddo", "Namfoodle", "Raulnor", "Zook"],
-    "Halfling": ["Alton", "Cade", "Evan", "Kipp", "Oliver", "Perrin", "Toby"],
-    "Half-Elf": ["Adran", "Aelar", "Erevan", "Galinndan", "Rolen", "Thamior", "Varis"],
-    "Half-Orc": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth"],
-    "Human": ["Alex", "Chris", "Jamie", "Jordan", "Riley", "Taylor", "Casey"],
-    "Tiefling": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon"]
+    "Dwarf":["Ander", "Arin", "Baelin", "Belmar", "Darrak", "Eberk", "Falkrunn", "Garrin", "Harbek", "Kildrak", "Morgran", "Nalim", "Orin", "Oskar", "Regdar", "Rogath", "Soren", "Taklinn", "Thorin", "Tredigar", "Ulfgar", "Veit", "Vondal", "Vorgath", "Zarik"],
+
+    "Dragonborn": ["Adair", "Alden", "Arin", "Bryn", "Caelan", "Cassian", "Darian", "Eiran", "Eldrid", "Emyr", "Finley", "Galen", "Hale", "Jory", "Kael", "Kamryn", "Linden", "Merric", "Nuriel", "Paxton", "Quinlan", "Riven", "Sarai", "Tarin", "Zarek"],
+
+    "Elf": ["Aeris", "Alar", "Amaranth", "Arden", "Ash", "Aspen", "Auburn", "Cedar", "Ember", "Hazel", "Juniper", "Linden", "Marigold", "Oak", "Peregrine", "Quill", "Rowan", "Sage", "Sequoia", "Sorrel", "Spruce", "Tawny", "Thistle", "Willow", "Wren"],
+
+    "Gnome": ["Alfie", "Bennie", "Dusty", "Finn", "Gus", "Izzy", "Joey", "Kip", "Lucky", "Mickey", "Nicky", "Ollie", "Pip", "Rudy", "Sammy", "Scout", "Sunny", "Terry", "Teddy", "Toby", "Tommy", "Wally", "Winnie", "Ziggy", "Zippy"],
+
+    "Halfling": ["Aster", "Briar", "Brook", "Clove", "Dale", "Elden", "Fawn", "Glen", "Harper", "Haven", "Jasper", "Leaf", "Linden", "Marlowe", "Merritt", "Oakley", "Parker", "Quinn", "Reed", "Sage", "Sparrow", "Sunny", "Tanner", "Vesper", "Wren"],
+
+    "Half-Elf": ["Ari", "Ash", "Cael", "Darian", "Eli", "Emery", "Eris", "Finley", "Harley", "Jesse", "Kai", "Linden", "Mika", "Nico", "Phoenix", "Quinn", "Reese", "Remy", "Sage", "Sasha", "Tanner", "Tatum", "Tristan", "Willow", "Wren"],
+
+    "Half-Orc": ["Ash", "Blade", "Brick", "Chase", "Dusk", "Ember", "Frost", "Gale", "Harbor", "Hawk", "Hunter", "Jade", "Jet", "Justice", "Onyx", "Phoenix", "Rebel", "Rune", "Shade", "Sky", "Slate", "Storm", "Vale", "Valor", "Zephyr"],
+
+    "Human": ["Avery", "Bailey", "Casey", "Charlie", "Dakota", "Ellis", "Emerson", "Finley", "Hayden", "Jordan", "Kai", "Kendall", "Leighton", "Logan", "Morgan", "Peyton", "Reagan", "Riley", "Rowan", "Sawyer", "Skyler", "Tatum", "Taylor", "Tyler", "Wyatt"],
+
+    "Tiefling": ["Ash", "Cinder", "Dusk", "Ember", "Flame", "Frost", "Garnet", "Onyx", "Raven", "Sable", "Sage", "Slate", "Smoky", "Thorn", "Umber", "Vesper", "Willow", "Wren", "Yarrow", "Zephyr", "Alder", "Briar", "Echo", "Lark", "Phoenix"]
 }
 # Abilities
 
