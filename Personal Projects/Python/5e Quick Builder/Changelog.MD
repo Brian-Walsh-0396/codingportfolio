@@ -5,12 +5,14 @@ Attention all adventurers! Exciting news: new weapons are coming soon to our ars
 
 ***
 ## V1.0.5.5 - March 23, 2023
-### We're excited to announce that our latest update includes the addition of new names to our collection of names! You can now choose from an even wider range of options when selecting a name for your character or project
+
+We're excited to announce that our latest update includes the addition of new names to our collection of names! You can now choose from an even wider range of options when selecting a name for your character or project
 
 ## V1.0.5.1 - March 23, 2023
 ### Bug fixed
 * Fixed bug with class information not displaying properly
 * Cleaned code
+
 ## V1.0.5 - March 21, 2023
 
 ### The Dragoborn Update 
