@@ -51,8 +51,8 @@ races = ['Dragonborn', 'Dwarf', 'Elf', 'Gnome', 'Halfling', 'Half-Elf', 'Half-Or
 
 
 names = {
- "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
-    "Dragonborn": ["Adair", "Bryn", "Caelan", "Darian", "Eiran", "Kael", "Tarin"],
+    "Dwarf": ["Bofur", "Dwalin", "Fili", "Gloin", "Kili", "Nori", "Thorin"],
+    "Dragonborn":["Adair","Alden","Arin","Bryn","Caelan","Cassian","Darian","Eiran","Eldrid","Emyr","Finley","Galen","Hale","Jory","Kael","Kamryn","Linden","Merric","Nuriel","Paxton","Quinlan","Riven","Sarai","Tarin","Zarek"],
     "Elf": ["Ara", "Cadeo", "Enara", "Lirien", "Myrin", "Sariel", "Thia"],
     "Gnome": ["Bimpnottin", "Glimfeather", "Fibblestib", "Jebeddo", "Namfoodle", "Raulnor", "Zook"],
     "Halfling": ["Alton", "Cade", "Evan", "Kipp", "Oliver", "Perrin", "Toby"],
