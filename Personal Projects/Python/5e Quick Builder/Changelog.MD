@@ -28,7 +28,7 @@ We've added an exciting new feature to our game! Players can now select from a p
 
 ## V1.0.3 - March 12, 2023
 
-## Bug Fixes
+### Bug Fixes
 
 We're excited to announce that we've just released a new update to our system! In this release, we've focused on fixing bugs and making the system easier to use. We've squashed several pesky bugs that were causing issues for some of our users, and we've made a number of small tweaks to improve the overall user experience. We're confident that these changes will make using our system a smoother and more enjoyable experience for everyone. As always, please don't hesitate to reach out to me if you have any feedback or suggestions for future updates.
 
