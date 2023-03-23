@@ -1,1 +1,0 @@
-gender_neutral_names = ["Ash", "Cinder", "Dusk", "Ember", "Flame", "Frost", "Garnet", "Onyx", "Raven", "Sable", "Sage", "Slate", "Smoky", "Thorn", "Umber", "Vesper", "Willow", "Wren", "Yarrow", "Zephyr", "Alder", "Briar", "Echo", "Lark", "Phoenix"]

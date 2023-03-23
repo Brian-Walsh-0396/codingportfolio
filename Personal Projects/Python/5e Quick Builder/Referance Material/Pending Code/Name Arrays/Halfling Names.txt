@@ -1,1 +1,0 @@
-names = ["Aster", "Briar", "Brook", "Clove", "Dale", "Elden", "Fawn", "Glen", "Harper", "Haven", "Jasper", "Leaf", "Linden", "Marlowe", "Merritt", "Oakley", "Parker", "Quinn", "Reed", "Sage", "Sparrow", "Sunny", "Tanner", "Vesper", "Wren"]

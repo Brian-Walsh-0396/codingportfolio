@@ -1,1 +1,0 @@
-names = ["Aeris", "Alar", "Amaranth", "Arden", "Ash", "Aspen", "Auburn", "Cedar", "Ember", "Hazel", "Juniper", "Linden", "Marigold", "Oak", "Peregrine", "Quill", "Rowan", "Sage", "Sequoia", "Sorrel", "Spruce", "Tawny", "Thistle", "Willow", "Wren"]

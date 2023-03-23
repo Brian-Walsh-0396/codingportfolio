@@ -153,18 +153,30 @@ while True:
         print("Invalid input. Please try again and enter the number of your chosen race or 'i' for more information.\n")
 
 # Prompt the user to select a name or enter their own
-print(
-    f"\nPlease select a name for your {races[int(race_choice)-1]} character, or enter your own name: \n")
-for i, name in enumerate(names[races[int(race_choice)-1]], start=1):
-    print(f"{i}. {name}")
-print(f"{len(names[races[int(race_choice)-1]])+1}. Enter your own name")
+print(f"\nPlease select a name for your {races[int(race_choice)-1]} character, or enter your own name: \n")
 
-name_choice = input("\nEnter the number of your chosen name: \n")
-if name_choice.isdigit() and int(name_choice) in range(1, len(names[races[int(race_choice)-1]])+1):
-    character_name = names[races[int(race_choice)-1]][int(name_choice)-1]
-    print(f"\nYour character's name is {character_name}")
-else:
-    character_name = input("\nEnter your own name: \n")
+while True:
+    random_names = random.sample(names[races[int(race_choice)-1]], k=5)
+    for i, name in enumerate(random_names, start=1):
+        print(f"{i}. {name}")
+    print("6. Generate new names")
+    print("7. Enter my own name")
+
+    name_choice = input("\nEnter the number of your chosen name: \n")
+
+    if name_choice.isdigit() and int(name_choice) in range(1, 6):
+        character_name = random_names[int(name_choice)-1]
+        print(f"\nYour character's name is {character_name}")
+        break
+    elif name_choice == "6":
+        continue
+    elif name_choice == "7":
+        character_name = input("\nEnter your own name: \n")
+        print(f"\nYour character's name is {character_name}")
+        break
+    else:
+        print("\nInvalid input. Please enter a number from 1 to 5 to select a name, 6 to generate new names, or 7 to enter your own name.\n")
+        continue
     print(f"\nYour character's name is {character_name}")
 
 

@@ -1,0 +1,6 @@
+Player:Brian
+Character:Kael
+Race:Dragonborn
+Class:Barbarian
+Rolls: [19, 19, 18, 8, 7, 5]
+Since you are playing a Barbarian, you should assign your two highest rolls to Strength and Constitution. 
